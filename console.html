@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+            font-family: 'Baloo Bhai 2', cursive;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        /* navbar icon */
+        #icon {
+            margin: 20px 30px;
+        }
+
+        #icon img {
+            height: 72px;
+            margin: 21px 20px;
+        }
+
+        /* navbar list */
+        #navbar ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.9;
+            z-index: -1;
+        }
+
+        #navbar ul li {
+
+
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: blanchedalmond;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: wheat;
+            transform: translateY(-10px);
+        }
+
+        /* Retro pc */
+        #ret::before {
+            content: "";
+            background: url('spare3.jpg') no-repeat center center/cover;
+            top: 241px;
+            left: 12px;
+            position: absolute;
+            height: 76%;
+            width: 97%;
+            z-index: -2;
+            opacity: 2.4;
+            box-shadow: 0 0 20px 0 rgb(200 200 200 / 70%);
+            
+        }
+
+        section {
+            overflow: scroll;
+        }
+
+        #retro {
+            margin: 34px;
+            display: flex;
+        }
+
+        #retro .box {
+            border: 2px solid black;
+            padding: 34px 10px;
+            border-radius: 20px;
+            margin: 4px 6px;
+            background-color: black;
+            color: blanchedalmond;
+            width: 90%;
+            transition: all 0.5s ease-in-out;
+            /* overflow: scroll; */
+        }
+
+        #retro .box:hover {
+            transform: translatey(-20px);
+            color: black;
+            background-color: transparent;
+
+            cursor: pointer;
+        }
+
+        #retro .box img {
+            height: 200px;
+            margin: auto;
+            /*(use block with margin auto) */
+            display: block;
+            cursor: pointer;
+            /* #box2 img{width: 200px;} */
+            transition: all 0.5s ease-in;
+        }
+
+        /* #action .box img:hover {
+        /* transform: scale(1.1, 1); */
+
+
+        #retro.box p {
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        fieldset legend {
+            font-size: 3.5rem;
+        }
+        .hsecond a{
+            display: flex;
+            text-decoration: none;
+            /* text-align: center;  */
+            justify-content: center;
+        }
+        /* RETRO CONSOLE */
+    #retC::before{
+    content: "";
+    background:url('spare4.jpg') no-repeat center center/cover;
+    left: 12px;
+    position: absolute;
+    height: 76%;
+    width: 97%;
+    z-index:-2;
+    opacity: 2.4;
+    box-shadow: 0 0 20px 0 rgb(200 200 200 / 70%);
+    filter: blur(2px);
+    top: 821px;
+    }
+
+    #retroC {
+        margin: 34px;
+        display: flex;
+    }
+
+    #retroC .boxC {
+        border: 2px solid black;
+        padding: 34px 10px;
+        border-radius: 20px;
+        margin: 4px 6px;
+        background-color: black;
+        color: blanchedalmond;
+        width: 61%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #retroC .boxC:hover {
+        transform: translatey(-20px);
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+        
+    }
+
+    #retroC .boxC img {
+        height: 200px;
+        margin: auto;
+        /*(use block with margin auto) */
+        display: block;
+        cursor: pointer;
+        /* #box2 img{width: 200px;} */
+        transition: all 0.5s ease-in;
+    }
+
+    /* #rpg .boxr img:hover {
+        transform: scale(1.1, 1);
+    } */
+
+    #retroC.boxC p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .p1{
+        display: flex;
+        justify-content: center;
+        color: white;
+
+    }
+    /* xbox */
+    #retX::before{
+    content: "";
+    background:url('spare1.jpg') no-repeat center center/cover;
+    left: 12px;
+    position: absolute;
+    height: 73%;
+    width: 97%;
+    z-index:-2;
+    opacity: 2.4;
+    box-shadow: 0 0 20px 0 rgb(200 200 200 / 70%);
+    filter: blur(2px);
+    top: 1391px;
+    }
+
+    #retroX {
+        margin: 34px;
+        display: flex;
+    }
+
+    #retroX .boxX {
+        border: 2px solid black;
+        padding: 34px 10px;
+        border-radius: 20px;
+        margin: 4px 6px;
+        background-color: black;
+        color: blanchedalmond;
+        width: 61%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #retroX .boxX:hover {
+        transform: translatey(-20px);
+        color: black;
+        background-color: transparent;
+        cursor: pointer;
+        
+    }
+
+    #retroX .boxX img {
+        height: 200px;
+        margin: auto;
+        /*(use block with margin auto) */
+        display: block;
+        cursor: pointer;
+        /* #box2 img{width: 200px;} */
+        transition: all 0.5s ease-in;
+    }
+
+    /* #rpg .boxr img:hover {
+        transform: scale(1.1, 1);
+    } */
+
+    #retroX.boxX p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .p1{
+        display: flex;
+        justify-content: center;
+        color: white;
+
+    }
+    </style>
+    
+    
+</head>
+<body>
+    <nav id="navbar">
+        <div id="icon">
+            <a href="1st_project1.html"><img src="icon.png" alt="GamersGate"></a>
+        </div>
+        <ul>
+            <li class="item"><a href="retro1.html">RETRO GAMES</a></li>
+            <li class="item"><a href="#retro">CONSOLE GAMES</a></li>
+            <li class="item"><a href="browser_section0.html">PC GAMES</a></li>
+
+        </ul>
+    </nav>
+    <section id="ret" class="service prime">
+        <fieldset>
+            <Legend><a name="retro">NINTENDO SWITCH GAMES AT LOW PRICES</a></Legend>
+            <h1 class="hprim center">
+            </h1>
+            <div id="retro">
+                <div class="box" id="box1"><img src="HK.png" alt="GamerGate">
+                    <h2 class="hsecond center"><a href="#">HOLLOW KNIGHT</a></h2>
+                    <p   class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                </div>
+                <div class="box" id="box2"><img src="ZBOTW.jpg" alt="GamerGate">
+                    <h2 class="hsecond center"><a href="#">ZELDA:BREATH OF THE WILD</a></h2>
+                    <p  class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                </div>
+                <div class="box" id="box3"><img src="had.jpg" alt="GamerGate">
+                    <h2 class="hsecond center"><a href="#">HADES</a></h2>
+                    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                </div>
+                <div class="box" id="box4"><img src="SV.jpg" alt="GamerGate">
+                    <h2 class="hsecond center"><a href="#">STREET FI</a></h2>
+                    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                </div>
+                <div class="box" id="box5"><img src="Diablo.jpg" alt="GamerGate">
+                    <h2 class="hsecond center"><a href="#">DIABLO III</a></h2>
+                    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                </div>
+            </div>
+
+        </fieldset>
+    </section>    
+        <section id="retC" class="service prime">
+            <fieldset>
+                <Legend><a name="retroC">LATEST PS4 EXCLUSIVE</a></Legend>
+                <h1 class="hprim center">
+                </h1>
+                <div id="retroC">
+                    <div class="boxC" id="box6"><img src="BLOODBORNE.jpg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">BLOODBORNE</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                    <div class="boxC" id="box7"><img src="HZ.jpeg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">HORIZON ZERO</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                    <div class="boxC" id="box8"><img src="RDR.jpg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">RED DED REDEMPTION</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                    <div class="boxC" id="box9"><img src="TLOU.jpg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">THE LAST OF US</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                    <div class="boxC" id="box10"><img src="U4.jpg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">UNCHARTED 4</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                </div>
+    
+            </fieldset>
+        </section>        
+        <section id="retX" class="service prime">
+            <fieldset>
+                <Legend><a name="retroX">LATEST XBOX GAMES</a></Legend>
+                <h1 class="hprim center">
+                </h1>
+                <div id="retroX">
+                    <div class="boxX" id="box6"><img src="SOT.jpg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">SEA OF THIEVES</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                    <div class="boxX" id="box7"><img src="Hell.jpg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">HELLBLADE</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                    <div class="boxX" id="box8"><img src="SO.jpg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">SUNSET OVERDRIVE</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                    <div class="boxX" id="box9"><img src="contro.jpg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">CONTROL</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                    <div class="boxX" id="box10"><img src="HALO.jpg" alt="GamerGate">
+                        <h2 class="hsecond center"><a href="#">HALO:COLLECTION</a></h2>
+                        <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+                    </div>
+                </div>
+    
+            </fieldset>
+        </section>        
+</body>
+
+</html>

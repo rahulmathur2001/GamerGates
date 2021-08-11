@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerGate_aboutUs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            background: url("spare1.jpg")no-repeat;
+            background-size: cover;
+            /* background-position: center; */
+            height: auto;
+            opacity: 0.8;
+        }
+        .hprim{
+            font-size: 3.5em;
+        }
+        .hprim:hover{
+            color: white;
+            backdrop-filter:blur(13px);
+        }
+
+        /* about us  */
+        #head1 {
+            font-size: 3.5rem;
+            font-family: 'Londrina Solid', cursive;
+            cursor: pointer;
+        }
+
+        #para1 {
+            font-size: 2rem;
+
+        }
+
+        /* client */
+        #service{
+    margin: 34px;
+    display: flex;
+    }
+    
+#service .box{
+    border: 2px solid black;
+    padding: 34px 10px;
+    border-radius: 20px;
+    margin: 4px 6px;
+    background-color: black;
+    color: blanchedalmond;
+    width: 61%;
+    transition:all 0.5s ease-in-out;}
+    
+    #service .box:hover{
+        transform: translatey(-20px);
+        /* color: black; */
+        background-color: transparent;
+        cursor: pointer;
+    }
+        
+
+#service .box img{height: 200px;
+     margin: auto;/*(use block with margin auto) */
+    display: block;
+    cursor: pointer;
+    /* #box2 img{width: 200px;} */
+     transition: all 0.5s ease-in;}
+     #service .box img:hover{
+         filter: blur(2px);
+     }
+#service.box p{
+    text-align: center;
+    font-size: 4rem;
+}
+.hsecond {
+    font-family: 'Rubik', sans-serif ;
+}
+.hsecond a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.hsecond a:hover{
+    color: white;
+}
+</style>
+</head>
+
+<body>
+    <section class="about">
+        <h1 id="head1">Here Is Some Things About Us</h1>
+        <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus a mollitia nulla quisquam, unde
+            autem
+            distinctio eveniet laboriosam quibusdam veniam repellat atque laudantium magnam deserunt hic beatae nostrum
+            nemo voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur ipsum ullam quae totam cum maiores officiis accusantium ducimus! Porro, dignissimos voluptas ut accusantium et, hic doloremque, quis repellendus consequuntur obcaecati vel dolorem commodi amet unde? Voluptatibus non nihil esse nostrum odit veniam quod quidem tempore aspernatur consectetur, voluptate facere? Excepturi rem quis, adipisci voluptates in totam magnam nobis ratione possimus vel ullam nisi iusto perferendis saepe odio sunt ipsum facere rerum quod voluptate omnis quaerat vitae deleniti. Corporis perspiciatis minus esse illum amet tenetur, asperiores nemo suscipit? Fuga architecto explicabo, aliquid obcaecati consectetur numquam veniam quod nesciunt, cupiditate, reiciendis error mollitia in a consequatur molestiae et sint aliquam libero possimus voluptate blanditiis dolorem doloremque rem. Hic odio possimus, assumenda dolore repellat ratione neque harum repudiandae nisi. Totam ipsum quasi recusandae praesentium sequi laudantium molestias eius cum eveniet excepturi est quidem maxime fuga commodi iure, voluptates architecto porro necessitatibus. Assumenda soluta natus optio, ipsam impedit iure quo perspiciatis minima repellat accusantium nihil iusto. Debitis voluptatum, assumenda sit nisi dignissimos quam omnis velit maxime aliquam voluptates animi ipsa totam perspiciatis cumque laudantium iure, quae consequuntur est accusamus libero, ut mollitia fuga vero. Libero architecto recusandae, dolores in dolor voluptas cum autem tenetur unde quasi ipsum molestias qui accusamus porro alias. Dolore nam quia adipisci, saepe officia nobis ipsum dolorum voluptatum ullam laborum similique doloribus facere non harum laboriosam alias eveniet eius numquam rerum provident, dicta nemo quam. Exercitationem molestiae dicta aliquam nihil beatae, vitae maxime culpa impedit deserunt voluptatem id, repellendus nesciunt quaerat quisquam suscipit, magnam quidem illo. Ab modi et doloremque ipsam magni voluptatum inventore quod, ratione dolore a sequi expedita deleniti harum, assumenda eius quisquam dolor! Nobis dolorem amet distinctio dicta. Nemo delectus dolores ipsa voluptatum odio debitis quaerat laboriosam repellendus! Natus eveniet qui placeat non. Ipsum labore quo tempora?</p>
+    </section>        
+    <section class="service prime">
+        <h1 class="hprim center">HERE ARE OUR PARTNERS</h1>
+       <div id="service">
+           <div class="box" id="box1"><img src="bethesda.png" alt="GamerGate">
+               <h2 class="hsecond center"><a href="https://bethesda.net/dashboard">BETHESDA</a></h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+           </div>
+           <div class="box" id="box2"><img src="from software.jpg" alt="GamerGate">
+               <h2 class="hsecond center"><a href="https://www.fromsoftware.jp/ww/">FROM SOFTWARE</a></h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+           </div>
+           <div class="box" id="box3"><img src="ubisoft.png" alt="GamerGate">
+               <h2 class="hsecond center"><a href="https://www.ubisoft.com/en-us/">UBISOFT</a></h2>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, aperiam.</p>
+           </div>
+       </div>
+   </section>
+    
+</body>
+
+</html>

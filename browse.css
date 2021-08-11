@@ -1,0 +1,357 @@
+
+    
+    #navbar {
+        font-family: 'Baloo Bhai 2', cursive;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    /* navbar icon */
+    #icon {
+        margin: 20px 30px;
+    }
+    
+    #icon img {
+        height: 72px;
+        margin: 21px 20px;
+    }
+    
+    /* navbar list */
+    #navbar ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.9;
+        z-index: -1;
+    }
+    
+    #navbar ul li {
+        
+        
+        font-size: 1.3rem;
+    }
+    
+    #navbar ul li a {
+        color: blanchedalmond;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+        
+    }
+    
+    #navbar ul li a:hover{
+        color: black;
+        background-color: wheat;
+        transform: translateY(-10px);
+    }
+    /* action */
+    #act::before{
+        content: "";
+        background:url('spare3.jpg') no-repeat center center/cover;
+        top: 232px;
+        left: 12px;
+        position: absolute;
+        height: 74%;
+        width: 97%;
+        z-index:-2;
+        opacity: 2.4;
+        box-shadow: 0 0 20px 0 rgb(200 200 200 / 70%)
+
+    }
+    
+    section {
+        overflow: scroll;
+    }
+
+    #action {
+        margin: 34px;
+        display: flex;
+    }
+
+    #action .box {
+        border: 2px solid black;
+        padding: 34px 10px;
+        border-radius: 20px;
+        margin: 4px 6px;
+        background-color: black;
+        color: blanchedalmond;
+        width: 90%;
+        transition: all 0.5s ease-in-out;
+        /* overflow: scroll; */
+    }
+
+    #action .box:hover {
+        transform: translatey(-20px);
+        color: white;
+        background-color:transparent; 
+
+        cursor: pointer;
+    }
+
+    #action .box img {
+        height: 200px;
+        margin: auto;
+        /*(use block with margin auto) */
+        display: block;
+        cursor: pointer;
+        /* #box2 img{width: 200px;} */
+        transition: all 0.5s ease-in;
+    }
+
+    /* #action .box img:hover {
+        /* transform: scale(1.1, 1); */
+    
+
+    #action.box p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    fieldset legend {
+        font-size: 3.5rem;
+    }
+
+    /* RPG */
+    #rpg::before{
+        content: "";
+        background:url('spare4.jpg') no-repeat center center/cover;
+        top: 798px;
+        left: 12px;
+        position: absolute;
+        height: 73%;
+        width: 97%;
+        z-index:-2;
+        opacity: 2.4;
+        box-shadow: 0 0 20px 0 rgb(200 200 200 / 70%);
+        filter: blur(2px);
+    }
+
+    #rpg {
+        margin: 34px;
+        display: flex;
+    }
+
+    #rpg .boxr {
+        border: 2px solid black;
+        padding: 34px 10px;
+        border-radius: 20px;
+        margin: 4px 6px;
+        background-color: black;
+        color: blanchedalmond;
+        width: 61%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #rpg .boxr:hover {
+        transform: translatey(-20px);
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #rpg .boxr img {
+        height: 200px;
+        margin: auto;
+        /*(use block with margin auto) */
+        display: block;
+        cursor: pointer;
+        /* #box2 img{width: 200px;} */
+        transition: all 0.5s ease-in;
+    }
+
+    /* #rpg .boxr img:hover {
+        transform: scale(1.1, 1);
+    } */
+
+    #rpg.boxr p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    /* stealth */
+    #strategy::before{
+        content: "";
+        background:url('Spare5.jpg') no-repeat center center/cover;
+        top: 1365px;
+        overflow: hidden;
+        left: 12px;
+        position: absolute;
+        height: 74%;
+        width: 97%;
+        z-index:-2;
+        opacity: 2.4;
+        box-shadow: 0 0 20px 0 rgb(200 200 200 / 70%)
+    }
+    #strategy {
+        margin: 34px;
+        display: flex;
+    }
+
+    #strategy .boxs {
+        border: 2px solid black;
+        padding: 34px 10px;
+        border-radius: 20px;
+        margin: 4px 6px;
+        background-color: black;
+        color: blanchedalmond;
+        width: 61%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #strategy .boxs:hover {
+        transform: translatey(-20px);
+        color: white;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    #strategy .boxs img {
+        height: 200px;
+        margin: auto;
+        /*(use block with margin auto) */
+        display: block;
+        cursor: pointer;
+        /* #box2 img{width: 200px;} */
+        transition: all 0.5s ease-in;
+    }
+
+    /* #strategy .boxs img:hover {
+        transform: scale(1.1, 1);
+    } */
+
+    #strategy.boxs p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    /* platformer */
+    #platformer::before{
+        content: "";
+        background:url('spare6.png') no-repeat center center/cover;
+        top: 1924px;
+        overflow: hidden;
+        left: 12px;
+        position: absolute;
+        height: 82%;
+        width: 97%;
+        z-index:-2;
+        opacity: 2.4;
+        box-shadow: 0 0 20px 0 rgb(200 200 200 / 70%)
+    }
+    #platformer {
+        margin: 34px;
+        display: flex;
+    }
+
+    #platformer .boxp {
+        border: 2px solid black;
+        padding: 34px 10px;
+        border-radius: 20px;
+        margin: 4px 6px;
+        background-color: black;
+        color: blanchedalmond;
+        width: 61%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #platformer .boxp:hover {
+        transform: translatey(-20px);
+        color: white;
+        background-color: transparent;
+        
+    }
+
+    #platformer .boxp img {
+        height: 200px;
+        margin: auto;
+        /*(use block with margin auto) */
+        display: block;
+        cursor: pointer;
+        /* #box2 img{width: 200px;} */
+        transition: all 0.5s ease-in;
+    }
+
+    /* #platformer .boxp img:hover {
+        transform: scale(1.1, 1);
+    } */
+
+    #platformer .boxp p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* Stealth */
+    #stealth::before{
+        content: "";
+        background:url('spare2.jpg') no-repeat center center/cover;
+        top: 2550px;
+        left: 12px;
+        position: absolute;
+        overflow: hidden;
+        height: 88%;
+        width: 98%;
+        z-index:-2;
+        opacity: 2.4;
+        box-shadow: 0 0 20px 0 rgb(200 200 200 / 70%)
+    }
+    #stealth {
+        margin: 34px;
+        display: flex;
+    }
+
+    #stealth .boxS {
+        border: 2px solid black;
+        padding: 34px 10px;
+        border-radius: 20px;
+        margin: 4px 6px;
+        background-color: black;
+        color: blanchedalmond;
+        width: 61%;
+        transition: all 0.5s ease-in-out;
+    }
+    #stealth .boxS a{
+        text-align: center;
+    }
+
+    #stealth .boxS:hover {
+        transform: translatey(-20px);
+        color: white;
+        background-color: transparent;
+
+        cursor: pointer;
+    }
+
+    #stealth .boxS img {
+        height: 200px;
+        margin: auto;
+        /*(use block with margin auto) */
+        display: block;
+        cursor: pointer;
+        /* #box2 img{width: 200px;} */
+        transition: all 0.5s ease-in;
+    }
+
+    /* #stealth .boxS img:hover {
+        transform: scale(1.1, 1);
+    } */
+
+    #stealth .boxS p {
+        text-align: center;
+        font-size: 1rem;
+        /* text-align: center; */
+        /* justify-content: center; */
+    }
+    .hsecond a{
+        text-decoration: none;
+        text-align: center;
+    }
